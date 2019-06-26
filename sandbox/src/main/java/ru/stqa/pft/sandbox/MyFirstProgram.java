@@ -1,28 +1,25 @@
 package ru.stqa.pft.sandbox;
 
+import static java.lang.Math.*;
+
 public class MyFirstProgram {
 
-  public static void main(String[] args) {
+    public static void main (String[] args) {
 
-      System.out.println("ru.stqa.pft.sandbox.MyFirstProgram!");
+        double a=2;
+        double x1=6;
+        double y1=8;
+        double x2=6;
+        double y2=3;
+        double q=x1-x2;
+        double w=y1-y2;
 
-
-      int x1=10;
-      int x2=6;
-      int y1=8;
-      int y2=3;
-      int a=2;
-      int q=x1-x2;
-      int w=y1-y2;
-
+        System.out.println("расст. между двумя точками на двумерной плоскости " + Math.sqrt(Math.pow(q,a)+ Math.pow(w,a)));
 
 
 
-      System.out.println("расстояние между точками p1 и p2 на двумерной плоскости" + "l" + Math.sqrt (Math.pow(a,q) + Math.pow(a,w)));
-
-
-
-  }
-
+    }
 
 }
+
+
