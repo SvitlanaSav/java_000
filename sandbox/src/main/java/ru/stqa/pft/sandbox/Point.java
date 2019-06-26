@@ -6,6 +6,20 @@ public class Point {
     public double y1;
     public double x2;
     public double y2;
+    double i=Math.sqrt(Math.pow((x1 - x2),2) + Math.pow((y1 - y2),2));
+
+    public Point (double x1,double y1,double x2,double y2){
+            this.x1=x1;
+            this.y1=y1;
+            this.x2=x2;
+            this.y2=y2;
+    }
+
+    public  double distance(){
+
+        return  i=(this.x1-this.y1)-(this.x2-this.y2);
+
+    }
 
 
 }
