@@ -6,9 +6,9 @@ public class Point {
     public double y1;
     public double x2;
     public double y2;
-    double i=Math.sqrt(Math.pow((x1 - x2),2) + Math.pow((y1 - y2),2));
+    double distance=Math.sqrt(Math.pow((x1 - x2),2) + Math.pow((y1 - y2),2));
 
-    public Point (double x1,double y1,double x2,double y2){
+    public Point (int x1,int y1,int x2,int y2){
             this.x1=x1;
             this.y1=y1;
             this.x2=x2;
@@ -17,7 +17,7 @@ public class Point {
 
     public  double distance(){
 
-        return  i=(this.x1-this.y1)-(this.x2-this.y2);
+        return  distance=Math.sqrt(Math.pow((x1 - x2),2) + Math.pow((y1 - y2),2));
 
     }
 
