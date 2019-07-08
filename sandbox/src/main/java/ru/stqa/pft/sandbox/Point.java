@@ -1,26 +1,20 @@
 package ru.stqa.pft.sandbox;
 
-public class Point {
+import java.awt.geom.CubicCurve2D;
 
-    public double x1;
-    public double y1;
-    public double x2;
-    public double y2;
-    double distance=Math.sqrt(Math.pow((x1 - x2),2) + Math.pow((y1 - y2),2));
+    public class Point {
 
-    public Point (int x1,int y1,int x2,int y2){
-            this.x1=x1;
-            this.y1=y1;
-            this.x2=x2;
-            this.y2=y2;
+
+        public double p1;
+        public double p2;
+
+        public Point(double p1, double p2) {
+            this.p1 = p1;
+            this.p2 = p2;
+        }
+        public  double distance() {
+            return Math.sqrt(this.p1 + this.p2);
+        }
     }
 
-    public  double distance(){
-
-        return  distance=Math.sqrt(Math.pow((x1 - x2),2) + Math.pow((y1 - y2),2));
-
-    }
-
-
-}
 
